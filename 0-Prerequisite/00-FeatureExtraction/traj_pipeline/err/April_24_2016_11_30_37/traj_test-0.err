@@ -1,0 +1,7 @@
+Warning: Permanently added 'ec2-54-172-154-165.compute-1.amazonaws.com,172.31.58.108' (ECDSA) to the list of known hosts.
+bash: cannot set terminal process group (3096): Inappropriate ioctl for device
+bash: no job control in this shell
+mount.nfs: /home/ubuntu/Data_ex1 is busy or already mounted
+mount.nfs: /home/ubuntu/Data_ex2 is busy or already mounted
+mount.nfs: /home/ubuntu/Data_ex3 is busy or already mounted
+Connection to ec2-54-172-154-165.compute-1.amazonaws.com closed by remote host.

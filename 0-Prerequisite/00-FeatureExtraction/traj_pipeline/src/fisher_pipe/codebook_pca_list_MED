@@ -1,0 +1,4 @@
+/data/MM21/iyu/semantic_concepts/gmm_MED/MED_traj_codebook /data/MM21/iyu/semantic_concepts/gmm_MED/MED_traj_pca_proj
+/data/MM21/iyu/semantic_concepts/gmm_MED/MED_hog_codebook /data/MM21/iyu/semantic_concepts/gmm_MED/MED_hog_pca_proj
+/data/MM21/iyu/semantic_concepts/gmm_MED/MED_hof_codebook /data/MM21/iyu/semantic_concepts/gmm_MED/MED_hof_pca_proj
+/data/MM21/iyu/semantic_concepts/gmm_MED/MED_mbh_codebook /data/MM21/iyu/semantic_concepts/gmm_MED/MED_mbh_pca_proj

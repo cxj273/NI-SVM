@@ -1,0 +1,1 @@
+zcat /data/MM31/xcli/traj/9746_len15/raw/HVC872895.gz | /home/iyu/MyCodes/lab/semantic_concepts/2014/fisher_pipe/fisher c 320 240 /data/MM22/iyu/semantic_concepts/feats/MED9746segx/HVC872895.segx -1 1 2 0.5 0 /data/MM21/iyu/semantic_concepts/gmm_MED/codebook_pca_list > /dev/null

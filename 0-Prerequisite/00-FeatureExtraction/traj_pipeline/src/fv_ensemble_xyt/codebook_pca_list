@@ -1,0 +1,4 @@
+/home/ubuntu/Data/traj_pipeline/gmm_MED/MED_traj_codebook /home/ubuntu/Data/traj_pipeline/gmm_MED/MED_traj_pca_proj
+/home/ubuntu/Data/traj_pipeline/gmm_MED/MED_hog_codebook /home/ubuntu/Data/traj_pipeline/gmm_MED/MED_hog_pca_proj
+/home/ubuntu/Data/traj_pipeline/gmm_MED/MED_hof_codebook /home/ubuntu/Data/traj_pipeline/gmm_MED/MED_hof_pca_proj
+/home/ubuntu/Data/traj_pipeline/gmm_MED/MED_mbh_codebook /home/ubuntu/Data/traj_pipeline/gmm_MED/MED_mbh_pca_proj

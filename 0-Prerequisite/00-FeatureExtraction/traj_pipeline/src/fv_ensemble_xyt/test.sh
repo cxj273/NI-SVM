@@ -1,0 +1,1 @@
+cat ./HVC5789_sk136_with_echo.raw | ./extract_fv ./HVC5789_noskip ./HVC5789_skip_136 ./HVC5789_shot ./HVC5789.segx 25 codebook_pca_xyt_list | ~/Data/traj_pipeline/bin/fisher ./HVC5789_xyt 480 360 ./HVC5789.segx -1 0 2 0.5 3 ./gmm_combo/gmm_MED_xyt_256/codebook_pca_list >/dev/null

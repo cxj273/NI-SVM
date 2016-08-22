@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ncku.hpds.tzulitai</groupId>
+    <artifactId>distributed-svm</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>cascade-svm-mr</artifactId>
+  <name>cascade-svm-mr</name>
+  <description>The Cascade SVM approach, implemented with MapReduce</description>
+  <build>
+  <plugins>
+	<plugin>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>2.3.2</version>
+		<configuration>
+			<source>1.8</source>
+			<target>1.8</target>
+		</configuration>
+	</plugin>
+   </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>tw.edu.ntu.csie</groupId>
+  		<artifactId>libsvm</artifactId>
+  		<version>3.17</version>
+  	</dependency>
+  </dependencies>
+</project>

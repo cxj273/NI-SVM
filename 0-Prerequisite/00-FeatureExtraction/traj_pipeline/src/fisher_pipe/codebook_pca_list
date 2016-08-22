@@ -1,0 +1,4 @@
+/data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_traj_codebook /data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_traj_pca_proj
+/data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_hog_codebook /data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_hog_pca_proj
+/data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_hof_codebook /data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_hof_pca_proj
+/data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_mbh_codebook /data/MM21/iyu/semantic_concepts/gmm/hmdb_ucf_mbh_pca_proj

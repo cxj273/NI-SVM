@@ -1,0 +1,1 @@
+cat HVC361380.raw | /home/ubuntu/Code/fv_ensemble/extract_fv ./fv_nosp_noskip_vid/HVC361380 ./fv_nosp_vid/HVC361380 ./fv_nosp_noskip_shot/HVC361380 /home/ubuntu/Data/all_segx//HVC361380.segx 29.9167 ./codebook_pca_list > dump
