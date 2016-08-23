@@ -91,6 +91,6 @@ end
 
 % recover the sign, only for iso_our and iso_yang when sign is on
 if ind(3) > 0 && (ind(4) == 1 || ind(4) == -1)
-    w = s .* w;
+    w = s .* w';
 end
 end

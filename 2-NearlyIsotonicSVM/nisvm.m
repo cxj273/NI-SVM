@@ -9,11 +9,13 @@ function ap = nisvm(fea, y, lambda, gamma, ind, fea_te, y_te)
 % gamma: squared l2 norm [0.001 0.01 0.1 1]
 % ind: nonnegative W?
 
-loss = @(w)       loss_shinge(X, y, w);
-prox = @(g,w,eta) prox_iso(g, w, eta, lambda, gamma, ind);
-perf = @(w) perf_aprec(w, X, y);
+[C, S, N] = size(fea);
 
-x = reshape(X, C*S, N);
+loss = @(w)       loss_shinge(fea, y, w);
+prox = @(g,w,eta) prox_iso(g, w, eta, lambda, gamma, ind);
+perf = @(w) perf_aprec(w, fea, y);
+
+fea_Te = reshape(fea_te, C*S, N);
 %opt.init_eta = N / svds(x*x', 1);
 %opt.stepsize_rule = '';
 opt.acc = 0;
@@ -21,6 +23,6 @@ opt.acc = 0;
 w0 = randn(C, S);
 w = FISTA(loss, prox, perf, w0, opt);
 
-ap = perf_aprec(w, fea_te, y_te);
+ap = perf_aprec(w, fea_Te, y_te);
 
 end

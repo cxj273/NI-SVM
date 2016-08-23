@@ -13,7 +13,7 @@ function mf1 = nisvm_m(fea, Y, S, lambda, gamma, ind, mu, fea_te, Y_te, Ste)
 [d, m, n] = size(fea);
 [junk, k] = size(Y);
 for ii = 1:n
-    fea(:,:,ii) = fea(:,:,ii) ./ norm(X(:,:,ii), 'fro');
+    fea(:,:,ii) = fea(:,:,ii) ./ norm(fea(:,:,ii), 'fro');
 end
 fea = reshape(fea, d, m*n);
 Y = ( Y == repmat(max(Y, [], 2) ,1 ,k) );
@@ -21,12 +21,12 @@ Y = ( Y == repmat(max(Y, [], 2) ,1 ,k) );
 % permutation, each column corresponds to an event
 [Sd, P] = sort(S, 1, 'descend');
 inc = 0:m:m*(n-1);
-P = P + repmat(inc, m, 1, k);
+P = P + repmat(inc, [m, 1, k]);
 P = reshape(P, m*n, k);
 
-loss = @(W)         loss_mhinge(X, Y, W, P, mu);
+loss = @(W)         loss_mhinge(fea, Y, W, P, mu);
 prox = @(G, W, eta) prox_iso_m(G, W, eta, lambda, gamma, ind);
-perf = @(W)         perf_confusion(W, X, Y, P);
+perf = @(W)         perf_confusion(W, fea, Y, P);
 
 %x = reshape(X, d*m, n);
 %opt.init_eta = N / svds(x*x', 1);
